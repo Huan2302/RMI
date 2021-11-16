@@ -7,6 +7,16 @@ public class TauModel implements Serializable {
     private String tenTau;
     private int soToa;
     private LichTrinhModel lichTrinh;
+    private int id_ga;
+
+
+    public TauModel(int id, String tenTau, int soToa, LichTrinhModel lichTrinh,int id_ga) {
+        this.id = id;
+        this.tenTau = tenTau;
+        this.soToa = soToa;
+        this.lichTrinh = lichTrinh;
+        this.id_ga = id;
+    }
 
     public TauModel() {
     }
@@ -46,7 +56,16 @@ public class TauModel implements Serializable {
         return lichTrinh;
     }
 
+
     public void setLichTrinh(LichTrinhModel lichTrinh) {
         this.lichTrinh = lichTrinh;
+    }
+
+    public int getId_ga() {
+        return id_ga;
+    }
+
+    public void setId_ga(int id_ga) {
+        this.id_ga = id_ga;
     }
 }

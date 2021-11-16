@@ -10,4 +10,6 @@ public interface RMI extends Remote {
     public int insertToa(ToaModel toa) throws RemoteException;
     public int insertPhieu(PhieuDatVeModel phieu) throws RemoteException;
     public int insertKhachHang(KhachHangModel khach) throws RemoteException;
+    public List<GaModel> findAllGa() throws RemoteException;
+    public List<TauModel> findTauByGa(int id) throws RemoteException;
 }
