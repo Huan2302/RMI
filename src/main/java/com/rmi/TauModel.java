@@ -9,8 +9,17 @@ public class TauModel implements Serializable {
     private LichTrinhModel lichTrinh;
     private int id_ga;
 
+    private String lich;
 
-    public TauModel(int id, String tenTau, int soToa, LichTrinhModel lichTrinh,int id_ga) {
+    public String getLich() {
+        return lich;
+    }
+
+    public void setLich(String lich) {
+        this.lich = lichTrinh.getNgayDi();
+    }
+
+    public TauModel(int id, String tenTau, int soToa, LichTrinhModel lichTrinh, int id_ga) {
         this.id = id;
         this.tenTau = tenTau;
         this.soToa = soToa;

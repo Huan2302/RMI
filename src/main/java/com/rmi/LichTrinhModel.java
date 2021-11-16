@@ -40,4 +40,9 @@ public class LichTrinhModel implements Serializable {
     public void setNgayDen(String ngayDen) {
         this.ngayDen = ngayDen;
     }
+
+    @Override
+    public String toString() {
+        return ngayDi;
+    }
 }
